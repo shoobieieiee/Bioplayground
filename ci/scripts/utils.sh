@@ -29,6 +29,7 @@ check_git_repository() {
 
 set_bionemo_home() {
     set +u
+    # make your changes here
     if [ -z "$BIONEMO_HOME" ]; then
         echo "\$BIONEMO_HOME is unset. Setting \$BIONEMO_HOME to repository root."
 
