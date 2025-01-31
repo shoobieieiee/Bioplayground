@@ -16,6 +16,7 @@
 # limitations under the License.
 
 # Function to check if Git repository is clean 
+# currently not being used, but do not want to remove it just in case
 #check_git_repository() {
 #    if ! git diff-index --quiet HEAD --; then
 #        if [ $? -eq 128 ]; then
@@ -46,7 +47,6 @@ set_bionemo_home() {
 
     # Change directory to BIONEMO_HOME or exit if failed
     cd "${BIONEMO_HOME}" || { echo "ERROR: Could not change directory to \$BIONEMO_HOME: $BIONEMO_HOME" >&2; return 1; }
-
 }
 
 version_ge() {
